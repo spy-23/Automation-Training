@@ -1,0 +1,84 @@
+package selenium;
+
+import java.time.Duration;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test2 {
+
+
+	public static void main(String[] args) throws Throwable {
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+	
+		driver.get("https://www.amazon.in/");  // Launch the URL
+		
+		WebElement ele1 = driver.findElement(By.id("twotabsearchtextbox"));// Find the Element
+		
+		ele1.click();								//Click on the searchbox textfield
+		
+		ele1.sendKeys("iphone 15 pro max");			//Enter the context for searching					
+		
+		WebElement ele2 = driver.findElement(By.xpath("//input[@id='nav-search-submit-button']"));
+		ele2.submit();
+		
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;	// Scrolling the page
+		js.executeScript("window.scrollBy(0,4000)");
+		
+		WebElement ele3 = driver.findElement(By.xpath("//span[text()='Apple iPhone 15 Pro (128 GB) - White Titanium']"));
+		ele3.click();
+		
+		Thread.sleep(3000);
+		
+		
+		String mainWindowHandle = driver.getWindowHandle(); // Store the current window handle
+		Set<String> windowHandles = driver.getWindowHandles(); // Get all window handles
+		for (String handle : windowHandles) {
+		    if (!handle.equals(mainWindowHandle)) {
+		        driver.switchTo().window(handle); // Switch to the pop-up window
+		        break;
+		    }
+		}
+		
+		JavascriptExecutor js1 = (JavascriptExecutor)driver;
+		js1.executeScript("window.scrollBy(0,4000)");
+		
+		WebElement ele4 = driver.findElement(By.id("add-to-cart-button"));
+		ele4.click(); 
+		
+		driver.findElement(By.xpath("//input[@aria-labelledby='attach-sidesheet-view-cart-button-announce']")).click();
+		
+		driver.findElement(By.xpath("//span[@class='a-expander-prompt']")).click(); //Click on dropdown
+		
+		WebElement ele5 = driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']"));
+		ele5.click();
+		
+		driver.findElement(By.id("createAccountSubmit")).click();
+		
+		driver.findElement(By.id("ap_customer_name")).sendKeys("nad");	     // Enter the name
+		driver.findElement(By.id("ap_phone_number")).sendKeys("1234567890"); //Enter mob No
+		driver.findElement(By.id("ap_password")).sendKeys("1238jhg90");		// Enter the Password
+		driver.findElement(By.id("continue")).click();
+		
+		driver.navigate().back();
+		Thread.sleep(5000);
+		driver.navigate().forward();
+		Thread.sleep(5000);
+		driver.navigate().refresh();
+		Thread.sleep(5000);
+		driver.quit();
+		
+
+	}
+
+}
