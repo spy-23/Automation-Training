@@ -16,6 +16,7 @@ public class Handling_Calender {
 		String date="15";
 		String year="2024";
 		WebDriver driver=new ChromeDriver();
+		
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.findElement(By.cssSelector(".react-date-picker__wrapper")).click();
 		driver.findElement(By.cssSelector(".react-calendar__navigation__label")).click();
