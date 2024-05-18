@@ -15,7 +15,7 @@ public class LoginPage {
     driver.get(URL);
 
 
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
     By usernameatt = By.xpath("//input[@name='username']");
     WebElement userboxpath = driver.findElement(By.xpath("//input[@name='username']"));
     userboxpath.click();
@@ -34,7 +34,7 @@ public class LoginPage {
     submitbutton.click();
 
 
-    Thread.sleep(3000);
+   // Thread.sleep(3000);
     driver.quit();
 
 
