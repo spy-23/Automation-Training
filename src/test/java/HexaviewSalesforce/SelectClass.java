@@ -35,8 +35,12 @@ public class SelectClass {
 		Select s1=new Select(month);
 		s1.selectByVisibleText("Sep");
 		WebElement year=driver.findElement(By.id("year"));
-		Select s3=new Select(month);
+		Select s3=new Select(year);
 		s3.selectByValue("1998");
+		WebElement gender=driver.findElement(By.xpath("(//span[@class='_5k_2 _5dba']/label)[2]"));
+		gender.click();
+		WebElement submit=driver.findElement(By.xpath("(//button[text()='Sign Up'])[1]"));
+		submit.click();
 		
 		
 		
