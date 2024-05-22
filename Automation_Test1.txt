@@ -1,0 +1,31 @@
+package Automation2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		
+		Actions action= new Actions(driver);
+		WebElement var = driver.findElement(By.id("twotabsearchtextbox"));
+		var.click();
+		
+		action.sendKeys("Mobile",Keys.ENTER).perform();
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
