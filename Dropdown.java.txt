@@ -36,6 +36,12 @@ public class saucedemoDropdownTest {
         select.selectByIndex((1));
 
         select.selectByVisibleText(Price (high to low));
+		
+//	   List<WebElement> list = driver.findElements(By.tagName("option"));
+//       WebElement lowToHigh = list.get(2);
+//       lowToHigh.click();
+
+
         Thread.sleep(3000);
         driver.quit();
 
