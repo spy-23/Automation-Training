@@ -41,7 +41,7 @@ public class SelectClass {
 		gender.click();
 		WebElement submit=driver.findElement(By.xpath("(//button[text()='Sign Up'])[1]"));
 		submit.click();
-		driver.quit();		
+			
 		
 		
 		
