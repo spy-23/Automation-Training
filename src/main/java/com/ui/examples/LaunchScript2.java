@@ -9,6 +9,7 @@ public class LaunchScript2 {
 			BrowserUtil bs=new BrowserUtil(Browser.CHROME);
 			bs.goToWebsite("https://www.facebook.com");
 			bs.maximizewindow();
+			System.out.println("aniket");
 			
 			
 			
