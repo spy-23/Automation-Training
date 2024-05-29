@@ -11,7 +11,7 @@ public class LaunchScript {
 		//import static for not to use class name for calling static methods
 		bs.enterTextInto(locatorById("username"),"iamsup");
 		bs.enterTextInto(locatorById("password"),"password");
-		bs.buttonClick(locatorByXpath("//span[text()=' Sign in ']"));
+		bs.clickOn(locatorByXpath("//span[text()=' Sign in ']"));
 		
 	}
 

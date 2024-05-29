@@ -36,7 +36,7 @@ public class BrowserUtil {
 		element.sendKeys(textToEnter);
 		
 	}
-	public void buttonClick(By locator)
+	public void clickOn(By locator)
 	{
 		sleepFor(5);
 		WebElement element=wd.findElement(locator);
