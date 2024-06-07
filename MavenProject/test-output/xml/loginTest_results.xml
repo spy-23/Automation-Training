@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestMultipleClasses"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.714">
+    <properties></properties>
+
+
+
+            <testcase
+                name="openUrl"
+                time="4.948"
+                classname="loginTest">
+            </testcase>
+            <testcase
+                name="quit"
+                time="0.351"
+                classname="loginTest">
+            </testcase>
+            <testcase
+                name="login"
+                time="0.415"
+                classname="loginTest">
+            </testcase>
+</testsuite>
