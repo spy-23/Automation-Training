@@ -9,8 +9,8 @@ public class LoginPageTest {
 		WebDriver wd=new ChromeDriver();
 		SignInPage signInPage=new SignInPage(wd);
 		
-		signInPage.doSignInWith("iamfd","password").goToCreateJobPage().createJob();
-
+		//signInPage.doSignInWith("iamfd","password").goToCreateJobPage().createJob();
+		signInPage.doSignInWith("iamfd","password").countOfItems();
 	
 }
 }

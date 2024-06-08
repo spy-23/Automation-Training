@@ -1,18 +1,25 @@
 package com.ui.examples;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BrowserUtil {
 	private WebDriver wd;
+	private WebDriverWait wait;
 
 	public BrowserUtil(WebDriver wd) {
 		super();
 		this.wd = wd;
+		wait= new WebDriverWait(wd,Duration.ofSeconds(30)); 
 	}
 
 	public void goToWebsite(String url) {
@@ -24,23 +31,36 @@ public abstract class BrowserUtil {
 		
 		public void enterTextInto(By locator,String textToEnter)
 		{
-			sleepFor(2);
-			WebElement element=wd.findElement(locator);
+			//sleepFor(2);
+			//WebElement element=wd.findElement(locator);
+			//use below one
+			WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 			element.clear();
-			sleepFor(2);
+			//sleepFor(2);
 			element.sendKeys(textToEnter);
 			
 		}
 		public void clickOn(By locator)
 		{
-			sleepFor(5);
-			WebElement element=wd.findElement(locator);
+			
+			//WebElement element=wd.findElement(locator);
+			//use below one
+			WebElement element=wait.until(ExpectedConditions.elementToBeClickable(locator));
 			element.click();
 			
 		}
 		
+		public void elementText(By locator)
+		{
+			WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			String count=element.getText();
+			System.out.println("No is"+count);
+			
+			
+		}
 		
-		public void sleepFor(int seconds)
+		
+		/*public void sleepFor(int seconds)
 		{
 			
 			try {
@@ -49,7 +69,7 @@ public abstract class BrowserUtil {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	}
+	}*/
 	
 
 }
