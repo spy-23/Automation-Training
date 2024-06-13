@@ -79,9 +79,6 @@ public abstract class BrowserUtil {
 			
 		}
 		
-		
-		
-		
 		public void sleepFor(int seconds)
 		{
 			
