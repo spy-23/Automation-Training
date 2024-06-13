@@ -23,8 +23,8 @@ public class DashboardPage extends BrowserUtil{
 	
 	public void countOfItems()
 	{
-		elementText(Pending_Job_Count);
-		elementText(Created_Job_TODAY);
+		getVisibleText(Pending_Job_Count);
+		getVisibleText(Created_Job_TODAY);
 		
 		
 	}

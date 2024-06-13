@@ -1,4 +1,4 @@
-package com.ui.examples;
+package com.ui.scenarios;
 
 import java.time.Duration;
 
@@ -82,7 +82,7 @@ public abstract class BrowserUtil {
 		
 		
 		
-		/*public void sleepFor(int seconds)
+		public void sleepFor(int seconds)
 		{
 			
 			try {
@@ -91,7 +91,7 @@ public abstract class BrowserUtil {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	}*/
+	
 	
 
-}
+}}
