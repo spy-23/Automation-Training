@@ -8,8 +8,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-
-
 public class parallelbrowserexecution {
 
 	WebDriver driver;

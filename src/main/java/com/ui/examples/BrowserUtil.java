@@ -10,10 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.github.dockerjava.api.model.Driver;
+
 public abstract class BrowserUtil {
 	private WebDriver wd;
 	private WebDriverWait wait;
-
+//parent (/../../../..)
 	public BrowserUtil(WebDriver wd) {
 		super();
 		this.wd = wd;
@@ -38,6 +40,8 @@ public abstract class BrowserUtil {
 		element.sendKeys(textToEnter);
 
 	}
+
+	
 
 	public void clickOn(By locator) {
 
@@ -90,6 +94,16 @@ public abstract class BrowserUtil {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameIndex));
 	}
 	
+	//dropdown selection
+	public void selectFromDropdown(By dropdownLocator, String value)
+	{
+		clickOn(dropdownLocator);
+		By dataLocator=By.xpath("//span[contains(text(),'"+value+"')]//..");
+		clickOn(dataLocator);
+		}
+	
+	
+
 	
 	
 

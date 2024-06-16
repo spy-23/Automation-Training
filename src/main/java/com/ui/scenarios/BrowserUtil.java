@@ -86,11 +86,9 @@ public abstract class BrowserUtil {
 	public void switchToFrame(String frameIdOrName) {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameIdOrName));
 	}
+
 	public void switchToFrame(int frameIndex) {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameIndex));
 	}
-	
-	
-	
 
 }

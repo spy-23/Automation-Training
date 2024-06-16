@@ -43,6 +43,6 @@ public class Testng2 {
 	public void End()
 	{
 		driver.close();
-        driver.quit();	
+		driver.quit();	
 	}
 }

@@ -56,9 +56,7 @@ public class Testng11 {
 	            System.out.println("Login Successful");
 	        } else {
 	            System.out.println("Login Failed");
-	        }
-		
-		
+	        }	
 	}
     @AfterTest
     public void End(){
