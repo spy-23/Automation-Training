@@ -8,9 +8,10 @@ public class Parameterization {
    public static WebDriver driver;
 
     @Test
-    @Parameters({"Website"})
-    public void test1(String Website){
+    @Parameters({"A","Website"})
+    public void test1(String website, String a){
         driver = new ChromeDriver();
-        driver.get(Website);
+        driver.get(website);
+        System.out.println(a);
     }
 }
