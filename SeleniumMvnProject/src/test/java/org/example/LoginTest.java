@@ -22,6 +22,7 @@ public class LoginTest {
     public void Broswersetupmethod(){
         driver=new ChromeDriver();
         driver.get("https://practicetestautomation.com/practice-test-login/");
+        driver.manage().window().maximize();
 
     }
 
