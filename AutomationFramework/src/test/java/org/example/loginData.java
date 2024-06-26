@@ -21,8 +21,7 @@ public class loginData {
     @DataProvider(name="loginDataProvider")
     public static Object[][] readData() {
         PoijiOptions options = PoijiOptions.PoijiOptionsBuilder.settings().build();
-        List<loginData> loginDataList ;
-        loginDataList=Poiji.fromExcel(new File("D:\\Automation\\Automation-Training\\AutomationFramework\\resources\\MOCK_DATA.xlsx"),loginData.class,options);
+        List<loginData> loginDataList = Poiji.fromExcel(new File("D:\\Automation\\Automation-Training\\AutomationFramework\\resources\\MOCK_DATA.xlsx"), loginData.class, options);
         Object[][] data = new Object[loginDataList.size()][2];
         for (int i = 0; i < loginDataList.size(); i++) {
            loginData  dataItem = loginDataList.get(i);
