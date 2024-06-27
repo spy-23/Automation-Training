@@ -53,13 +53,6 @@ public void waits(WebDriver driver, WebElement element, String condition)  {
         Actions actions=new Actions(driver);
         actions.sendKeys(Keys.ENTER).perform();
     }
-    public void arrowBtnPress(WebDriver driver){
-        Actions actions=new Actions(driver);
-        actions.keyDown(Keys.ARROW_DOWN).build().perform();
-        actions.keyDown(Keys.ARROW_DOWN).build().perform();
-        actions.keyUp(Keys.ARROW_DOWN).build().perform();
-        enterBtnPress(driver);
-    }
     public void screenshot(WebDriver driver) throws IOException {
         TakesScreenshot takesScreenshot=(TakesScreenshot)driver;
         File source=takesScreenshot.getScreenshotAs(OutputType.FILE);

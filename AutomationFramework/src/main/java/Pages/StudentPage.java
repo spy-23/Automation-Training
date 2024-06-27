@@ -31,7 +31,7 @@ public class StudentPage {
     public WebElement year;
     @FindBy(className = "react-datepicker__month-select")
     public WebElement month;
-    @FindBy(id="subjectsContainer")
+    @FindBy(xpath = "//input[@id='subjectsInput']")
     public WebElement subjects;
     @FindBy(id="uploadPicture")
     public WebElement uploadBtn;
