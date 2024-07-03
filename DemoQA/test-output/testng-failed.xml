@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA(failed)">
+    <parameter name="URL" value="https://demoqa.com/automation-practice-form"/>
+    <classes>
+      <class name="com.demoQA.test.LoginTest">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.demoQA.test.LoginTest -->
+    </classes>
+  </test> <!-- C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

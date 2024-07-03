@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA">
+
+       <parameter name="URL" value="https://demoqa.com/automation-practice-form"/>
+        <classes>
+            <class name="com.demoQA.test.LoginTest">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+            <class name="org.example.TestNGDemo">
+                <methods>
+                    <exclude name="t1"/>
+                    <exclude name="t2"/>
+                    <exclude name="t3"/>
+                    <exclude name="UseDataProvider"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

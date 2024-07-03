@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA">
+        <classes>
+            <class name="org.example.TestNGDemo">
+                <methods>
+                    <include name="UseDataProvider"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
