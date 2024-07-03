@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b15aab33-58f1-49b1-a0a5-2b98341030d9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2iPQHtol4dEUD0u86GRm8ZLmh7I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA/testng.xml.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.gen.executor": "Debug",
+    "TestNG.LoginTest.test1.executor": "Run",
+    "TestNG.TestNGDemo.UseDataProvider.executor": "Run",
+    "TestNG.TestNGDemo.executor": "Run",
+    "TestNG.TestNGDemo.t1.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rajat.shukla\OneDrive - Hexaview Technologies\Desktop\AutomationGit\Automation-Training\DemoQA" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rajat.shukla\OneDrive - Hexaview Technologies\Desktop\AutomationGit\Automation-Training\DemoQA\RunnerXML" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA/testng.xml">
+    <configuration name="C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter2" />
+        <listener class="org.testng.reporters.FailedReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoQA.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoQA.test" />
+      <option name="MAIN_CLASS_NAME" value="com.demoQA.test.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoQA.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoQA.test" />
+      <option name="MAIN_CLASS_NAME" value="com.demoQA.test.LoginTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGDemo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TestNGDemo" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGDemo.UseDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TestNGDemo" />
+      <option name="METHOD_NAME" value="UseDataProvider" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.LoginTest" />
+      <item itemvalue="TestNG.LoginTest.test1" />
+      <item itemvalue="TestNG.C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA/testng.xml" />
+      <item itemvalue="TestNG.TestNGDemo" />
+      <item itemvalue="TestNG.TestNGDemo.UseDataProvider" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/rajat.shukla/OneDrive - Hexaview Technologies/Desktop/AutomationGit/Automation-Training/DemoQA/testng.xml" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.test1" />
+        <item itemvalue="TestNG.TestNGDemo" />
+        <item itemvalue="TestNG.TestNGDemo.UseDataProvider" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b15aab33-58f1-49b1-a0a5-2b98341030d9" name="Changes" comment="" />
+      <created>1719389648525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719389648525</updated>
+    </task>
+    <servers />
+  </component>
+</project>
